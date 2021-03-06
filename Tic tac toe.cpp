@@ -1,3 +1,8 @@
+/* ***************************************************
+ * A Simple Tic-Tac-Toe game meant for 2 players
+ * Author: Subhranil Mondal
+******************************************************/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -140,7 +145,8 @@ int main()
 			break;		
 		}
 		
-		board[i][j] = (turn ? '0' : 'X');
+		board[i][j] = (turn ? '0' : 'X');				/* Decide on the character to be filled depending on whose turn it is 
+														   ('X' for player 1 and '0' for player 2) */ 
 		
 		if(isGameOver(board, board[i][j]))
 		{
